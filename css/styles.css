@@ -10,7 +10,40 @@ ul {
   list-style: none;
 }
 
+р,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+}
+
 /* ------------------HEADER------------------ */
+
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
 
 .logo-accent {
   color: #2196f3;
@@ -23,16 +56,46 @@ ul {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+
+  margin-right: 93px;
+}
+
+.header-wrapper {
+  display: flex;
+  align-items: baseline;
+}
+
+.nav-wrapper {
+  display: flex;
+}
+
+.auth-wrapper {
+  display: flex;
+  margin-left: auto;
+}
+
+.auth-item {
+}
+
+.auth-item:last-child {
+  margin-left: 40px;
 }
 
 .header-nav-link {
+  display: inline-block;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   color: #212121;
   letter-spacing: 0.02em;
+
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
+.header-nav-item:not(:last-child) {
+  margin-right: 50px;
+}
 .header-nav-link:hover,
 .header-nav-link:focus {
   color: #2196f3;
@@ -48,6 +111,9 @@ ul {
   line-height: 1.14;
   color: #757575;
   letter-spacing: 0.02em;
+
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .header-auth-link:hover,
@@ -59,6 +125,7 @@ ul {
 
 .hero {
   background-color: #2f303a;
+  text-align: center;
 }
 
 .hero-title {
@@ -71,6 +138,8 @@ ul {
   color: #fff;
 
   text-align: center;
+
+  margin-bottom: 30px;
 }
 
 .hero-btn {
@@ -86,9 +155,9 @@ ul {
 
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-
-  width: 200px;
-  height: 50px;
+  padding: 10px 32px;
+  /* width: 200px;
+  height: 50px; */
 }
 
 .hero-btn:hover,
@@ -98,6 +167,16 @@ ul {
 
 /* ------------------ОСОБЛИВОСТІ------------------ */
 
+.feature-list {
+  display: flex;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.feature-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .feature-title {
   font-weight: 700;
   font-size: 14px;
@@ -106,6 +185,8 @@ ul {
   text-transform: uppercase;
 
   color: #212121;
+
+  margin-bottom: 10px;
 }
 
 .feature-text {
@@ -117,7 +198,7 @@ ul {
 
 /* ------------------ЧИМ МИ ЗАЙМАЄМОСЯ------------------ */
 
-.setion-title {
+.section-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -125,8 +206,32 @@ ul {
   letter-spacing: 0.03em;
 
   color: #212121;
+
+  margin-bottom: 50px;
 }
 
+.img-wrapper {
+  display: flex;
+  padding-bottom: 94px;
+}
+
+.img:not(:last-child) {
+  margin-right: 30px;
+}
+
+/* ------------------НАША КОМАНДА------------------ */
+
+.work-section {
+  background-color: #f5f4fa;
+}
+
+.work-title {
+  padding-top: 94px;
+}
+
+.workers-wrapper {
+  display: flex;
+}
 .worker-title {
   font-weight: 500;
   font-size: 16px;
