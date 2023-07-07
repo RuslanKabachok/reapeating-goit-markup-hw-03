@@ -23,7 +23,7 @@
   <body>
     <header class="header">
       <div class="container header-wrapper">
-        <a href="./index.html" lang="en" class="logo">
+        <a href="./index.html" lang="en" class="logo header-logo">
           <span class="logo-accent">Web</span>Studio</a
         >
         <nav>
@@ -57,11 +57,13 @@
     <main>
       <!-- блок герой -->
       <section class="hero">
-        <h1 class="hero-title">
-          Ефективні рішення <br />
-          для вашого бізнесу
-        </h1>
-        <button class="hero-btn" type="button">Замовити послугу</button>
+        <div class="container">
+          <h1 class="hero-title">
+            Ефективні рішення <br />
+            для вашого бізнесу
+          </h1>
+          <button class="hero-btn" type="button">Замовити послугу</button>
+        </div>
       </section>
       <!-- блок особливості -->
       <section>
@@ -133,9 +135,9 @@
       <!-- блок наша команда -->
       <section class="work-section">
         <div class="container">
-          <h2 class="section-title work-title">Наша команда</h2>
+          <h2 class="section-title">Наша команда</h2>
           <ul class="workers-wrapper">
-            <li>
+            <li class="work-item">
               <img
                 src="./images/igor.jpg"
                 alt="Працівник Ігор"
@@ -145,7 +147,7 @@
               <h3 class="worker-title">Ігор Дем'яненко</h3>
               <p lang="en" class="worker-descr">Product Designer</p>
             </li>
-            <li>
+            <li class="work-item">
               <img
                 src="./images/olga.jpg"
                 alt="Працівник Ольга"
@@ -155,7 +157,7 @@
               <h3 class="worker-title">Ольга Рєпіна</h3>
               <p lang="en" class="worker-descr">Frontend Developer</p>
             </li>
-            <li>
+            <li class="work-item">
               <img
                 src="./images/mykola.jpg"
                 alt="Працівник Микола"
@@ -165,7 +167,7 @@
               <h3 class="worker-title">Микола Тарасов</h3>
               <p lang="en" class="worker-descr">Marketing</p>
             </li>
-            <li>
+            <li class="work-item">
               <img
                 src="./images/myhailo.jpg"
                 alt="Працівник Михайло"
@@ -181,32 +183,34 @@
     </main>
 
     <footer class="footer">
-      <a href="./index.html" lang="en" class="logo footer-logo">
-        <span class="logo-accent">Web</span>Studio</a
-      >
-      <address>
-        <ul>
-          <li>
-            <a
-              href="https://goo.gl/maps/8fUT9mv14ZaH1TDk7?coh=178571&entry=tt"
-              target="_blank"
-              rel="noopener noreferrer nofollow"
-              class="footer-address"
-              >м. Київ, пр-т Лесі Українки, 26</a
-            >
-          </li>
-          <li>
-            <a href="mailto:info@devstudio.com" class="footer-link"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li>
-            <a href="tel:+380961111111" class="footer-link"
-              >+38 096 111 11 11</a
-            >
-          </li>
-        </ul>
-      </address>
+      <div class="container">
+        <a href="./index.html" lang="en" class="logo footer-logo">
+          <span class="logo-accent">Web</span>Studio</a
+        >
+        <address>
+          <ul class="footer-nav">
+            <li class="footer-link">
+              <a
+                href="https://goo.gl/maps/8fUT9mv14ZaH1TDk7?coh=178571&entry=tt"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                class="footer-address"
+                >м. Київ, пр-т Лесі Українки, 26</a
+              >
+            </li>
+            <li class="footer-link">
+              <a href="mailto:info@devstudio.com" class="footer-link"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="footer-link">
+              <a href="tel:+380961111111" class="footer-link"
+                >+38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
     </footer>
   </body>
 </html>
